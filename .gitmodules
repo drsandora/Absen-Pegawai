@@ -1,3 +1,18 @@
 [submodule "fe-absen-pegawai"]
 	path = fe-absen-pegawai
 	url = git@github.com:drsandora/fe-absen-pegawai.git
+[submodule "be-auth-absensi"]
+	path = be-auth-absensi
+	url = git@github.com:drsandora/be-auth-absensi.git
+[submodule "be-gateaway-absensi"]
+	path = be-gateaway-absensi
+	url = git@github.com:drsandora/be-gateaway-absensi.git
+[submodule "be-pegawai-absensi"]
+	path = be-pegawai-absensi
+	url = git@github.com:drsandora/be-pegawai-absensi.git
+[submodule "be-report-absensi"]
+	path = be-report-absensi
+	url = git@github.com:drsandora/be-report-absensi.git
+[submodule "be-absen-absensi"]
+	path = be-absen-absensi
+	url = git@github.com:drsandora/be-absen-absensi.git
