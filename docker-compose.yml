@@ -1,0 +1,76 @@
+version: '3'
+services:
+
+  # postgre:
+  #   image: 18a0d1a35d0e
+  #   ports: 
+  #     - "5435:5432"
+  #   container_name: postgres12
+
+  absensis:
+    build:
+      dockerfile: Dockerfile
+      context: ./be/absensis
+    container_name: absensis
+    ports:
+      - "8003:8003"
+    restart: always
+    volumes:
+      - /be/absensiS
+      - /be/absensiS/node_modules
+
+  # pegawaiS:
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ./pegawaiS
+  #   container_name: pegawaiS
+  #   ports:
+  #     - "8002:8002"
+  #   restart: always
+  #   depends_on:
+  #     - "postgre"
+  #   volumes:
+  #     - ./app
+  #     - /app/pegawaiS/node_modules
+
+  # authS:
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ./authS
+  #   container_name: authS
+  #   ports:
+  #     - "8001:8001"
+  #   restart: always
+  #   depends_on:
+  #     - "postgre"
+  #   volumes:
+  #     - ./app
+  #     - /app/authS/node_modules
+
+  # reportS:
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ./reportS
+  #   container_name: reportS
+  #   ports:
+  #     - "8004:8004"
+  #   restart: always
+  #   depends_on:
+  #     - "postgre"
+  #   volumes:
+  #     - ./app
+  #     - /app/reportS/node_modules
+
+  # gateawayS:
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ./gateawayS
+  #   container_name: gateawayS
+  #   ports:
+  #     - "8000:8000"
+  #   restart: always
+  #   depends_on:
+  #     - "postgre"
+  #   volumes:
+  #     - ./app
+  #     - /app/pegawaiS/node_modules

@@ -1,0 +1,3 @@
+[submodule "fe-absen-pegawai"]
+	path = fe-absen-pegawai
+	url = git@github.com:drsandora/fe-absen-pegawai.git
