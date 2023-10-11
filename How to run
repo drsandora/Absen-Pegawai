@@ -1,0 +1,35 @@
+###############################################################################
+Step Guide
+
+1. clone this repostiroy 
+2. clone submodule frontend
+3. clone every submodule backend
+
+How to run
+
+Frontend
+1. run your command by type "npm i" in fe directory
+2. run your command by type "npm run dev" in fe directory
+
+backend
+1. run your command by type "npm i" in every submodule backend directory
+2. run your command by type "npm start" in every submodule backend directory
+
+setup database.
+
+1. in this case i use postgre as database, but you can change to other database by editing some code.
+2. on sumbodule backend, find connection file.
+3. set your database
+
+
+
+Enjoy
+
+###############################################################################
+
+##########################################################
+##########################################################
+##########################################################
+##########################################################
+##########################################################
+##########################################################
